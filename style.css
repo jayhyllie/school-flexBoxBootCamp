@@ -12,7 +12,7 @@ body {
     padding: 10vh;
 }
 img {
-    max-width: 4em;
+    width: 4em;
     object-fit: contain;
 }
 
@@ -95,23 +95,116 @@ img {
 
 /* Fibonacci */
 
+.fibo-path {
+    word-wrap: break-word;
+}
+
 .fibo-items {
     display: flex;
-    width: 50%;
-    height: 50px;
-    background: linear-gradient(0.25turn, #681800,#22ff00);
+    width: 50em;
+    height: 10em;
 }
-.fibo-item {
-    flex: 1;
-    border: 1px solid rgba(152, 152, 152, 0.1);
+.fibo-items-2 {
+    display: flex;
+    width: 50em;
+    height: 10em;
+    flex-flow: row-reverse;
 }
-/* .fibo-item:nth-of-type(1) { flex-grow: 0.5; }
-.fibo-item:nth-of-type(2) { flex-grow: 1; }
-.fibo-item:nth-of-type(3) { flex-grow: 1; }
-.fibo-item:nth-of-type(4) { flex-grow: 1.5; }
-.fibo-item:nth-of-type(5) { flex-grow: 2; }
-.fibo-item:nth-of-type(6) { flex-grow: 2.5; }
-.fibo-item:nth-of-type(7) { flex-grow: 3; }
-.fibo-item:nth-of-type(8) { flex-grow: 3.5; }
-.fibo-item:nth-of-type(9) { flex-grow: 4; }
-.fibo-item:nth-of-type(10) { flex: 5; } */
+.box1 { flex: 0.5; background: rgba(100,0,0,1);}
+.box2 { flex: 1; background: rgba(100,20,0,1);}
+.box3 { flex: 1.5; background: rgba(100,40,0,1);}
+.box4 { flex: 2; background: rgba(100,60,0,1);}
+.box5 { flex: 2.5; background: rgba(100,80,0,1);}
+.box6 { flex: 3; background: rgba(100,100,0,1);}
+.box7 { flex: 3.5; background: rgba(100,120,0,1);}
+.box8 { flex: 4; background: rgba(100,140,0,1);}
+.box9 { flex: 4.5; background: rgba(100,160,0,1);}
+.box10 { flex: 5; background: rgb(100, 180, 0, 1);}
+
+/* Kort med pager */
+
+.card {
+    background: #fff;
+    width: 15em;
+    height: 25em;
+    box-shadow: 0 0 5px 5px rgba(152, 152, 152, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card section:first-of-type {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.card section:first-of-type > * {
+    margin: 1rem 0;
+}
+.card blockquote {
+    color: #ababab;
+}
+.card h2 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: auto;
+}
+section:has(.dots) {
+    width: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.dots {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+.dots:active {
+    background: #444;
+}
+
+/* Profilkort */
+
+.profile-card {
+    background: #fff;
+    width: 15em;
+    height: 25em;
+    box-shadow: 0 0 5px 5px rgba(152, 152, 152, 0.1);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.profile-card section {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.profile-card section img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-card h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.profile-card h4 {
+    font-size: .7rem;
+    color: #bbb;
+    font-weight: normal;
+}
+button {
+    background: rgb(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+/*  */
