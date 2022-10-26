@@ -95,30 +95,29 @@ img {
 
 /* Fibonacci */
 
-.fibo-path {
-    word-wrap: break-word;
-}
-
 .fibo-items {
     display: flex;
-    width: 50em;
+    width: 70em;
     height: 10em;
+    margin-bottom: 2em;
+    color: #fff;
 }
 .fibo-items-2 {
     display: flex;
-    width: 50em;
+    width: 70em;
     height: 10em;
     flex-flow: row-reverse;
+    color: #fff;
 }
+.box3 { flex: 0.5; background: rgba(100,40,0,1);}
 .box1 { flex: 0.5; background: rgba(100,0,0,1);}
-.box2 { flex: 1; background: rgba(100,20,0,1);}
-.box3 { flex: 1.5; background: rgba(100,40,0,1);}
-.box4 { flex: 2; background: rgba(100,60,0,1);}
-.box5 { flex: 2.5; background: rgba(100,80,0,1);}
-.box6 { flex: 3; background: rgba(100,100,0,1);}
-.box7 { flex: 3.5; background: rgba(100,120,0,1);}
-.box8 { flex: 4; background: rgba(100,140,0,1);}
-.box9 { flex: 4.5; background: rgba(100,160,0,1);}
+.box2 { flex: 0.5; background: rgba(100,20,0,1);}
+.box4 { flex: 0.6; background: rgba(100,60,0,1);}
+.box5 { flex: 0.7; background: rgba(100,80,0,1);}
+.box6 { flex: 0.8; background: rgba(100,100,0,1);}
+.box7 { flex: 0.9; background: rgba(100,120,0,1);}
+.box8 { flex: 1.1; background: rgba(100,140,0,1);}
+.box9 { flex: 3; background: rgba(100,160,0,1);}
 .box10 { flex: 5; background: rgb(100, 180, 0, 1);}
 
 /* Kort med pager */
@@ -207,4 +206,148 @@ button {
     border: none;
 }
 
-/*  */
+/* Spelkort */
+
+.play-card {
+    background: #fff;
+    width: 15em;
+    height: 25em;
+    box-shadow: 0 0 5px 5px rgba(152, 152, 152, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.play-card div {
+    display: flex;
+    flex-direction: column;
+}
+.play-card div:first-child {
+    align-self: flex-start;
+}
+.play-card div:last-child {
+    align-self: flex-end;
+    transform: rotate(180deg);
+}
+.heart {
+    color: #b10000;
+}
+.heart.big {
+    font-size: 2em;
+}
+
+/*  Produkt profilläge */
+
+.product-card {
+    background: #fff;
+    width: 15em;
+    height: 25em;
+    box-shadow: 0 0 5px 5px rgba(152, 152, 152, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.product-card > * {
+    width: 100%;
+    height: 50%;
+}
+.product-card figure {
+    background: rgb(255, 221, 2);
+    display: flex;
+    justify-content: center;
+}
+.product-card figure img {
+    width: 100%;
+}
+.product-card section {
+    padding: 1em;
+    position: relative;
+}
+.product-card section > * {
+    margin: 5px;
+}
+.product-card section h2 {
+    font-size: .8em;
+    font-weight: 500;
+}
+.product-card section p {
+    font-size: .7em;
+    margin: 10px 5px;
+}
+.product-card section span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.6em;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* Produkt landskap */
+
+.landscape-card {
+    background: #fff;
+    width: 50em;
+    height: 25em;
+    box-shadow: 0 0 5px 5px rgba(152, 152, 152, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.landscape-card > * {
+    flex: 1;
+    height: 100%;
+}
+.landscape-card figure {
+    background: rgb(255, 221, 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.landscape-card figure img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    margin-top: auto;
+}
+.landscape-card figure figcaption {
+    align-self: flex-end;
+    padding: 2rem;
+    margin-top: auto;
+    font-size: 2rem;
+}
+.landscape-card section {
+    padding: 2em;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.landscape-card h1 {
+    font-size: 2rem;
+}
+.landscape-card h2 {
+    font-size: 1rem;
+}
+.landscape-card p {
+    font-size: .8rem;
+}
+.landscape-card button {
+    margin-top: auto;
+    align-self: flex-end;
+    background: none;
+    border: 2px solid #000;
+    border-radius: 0;
+    color: #000;
+}
+.landscape-card button:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
